@@ -19,7 +19,7 @@ def preprocess_features(features):
     features['Married'].fillna(features['Married'].mode()[0], inplace=True)
     features['Dependents'].fillna(features['Dependents'].mode()[0], inplace=True)
     features['Self_Employed'].fillna(features['Self_Employed'].mode()[0], inplace=True)
-
+    
     # Replace categorical values with numerical labels
     features.replace({'Married': {'No': 0, 'Yes': 1},
                       'Gender': {'Male': 1, 'Female': 0},
@@ -57,7 +57,7 @@ def main():
     education = st.selectbox("Education", ["Not Graduate", "Graduate"])
     self_employed = st.selectbox("Self Employed", ["No", "Yes"])
     applicant_income = st.number_input("Applicant Income (INR)", min_value=0, value=0)
-    
+    coapplicant_income = st.number_input("Co-applicant Income (INR)", min_value=0, value=0)
     loan_amount = st.number_input("Loan Amount (in thousands)", min_value=0, value=0)
     loan_amount_term = st.number_input("Loan Amount Term (in months)", min_value=0, value=0)
     credit_history = st.selectbox("Credit history of individual’s repayment of their debts (0 for No history 1 for Having History) ", [0, 1])
@@ -71,7 +71,7 @@ def main():
         'Education': education,
         'Self_Employed': self_employed,
         'ApplicantIncome': applicant_income,
-        
+        'CoapplicantIncome': coapplicant_income,
         'LoanAmount': loan_amount,
         'Loan_Amount_Term': loan_amount_term,
         'Credit_History': credit_history,
