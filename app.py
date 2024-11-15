@@ -46,7 +46,7 @@ def main():
     # Display the title with centered styling
     st.markdown(title_style, unsafe_allow_html=True)
     st.markdown("<h1 class='title'>Loan Status Prediction</h1>", unsafe_allow_html=True)
-    image_path ="pic1.jpg"
+    image_path ="pic1.webg"
     st.image(image_path,use_column_width=True)
 
 
