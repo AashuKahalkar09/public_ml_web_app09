@@ -57,7 +57,7 @@ def main():
     education = st.selectbox("Education", ["Not Graduate", "Graduate"])
     self_employed = st.selectbox("Self Employed", ["No", "Yes"])
     applicant_income = st.number_input("Applicant Income (INR)", min_value=0, value=0)
-    coapplicant_income = st.number_input("Co-applicant Income (INR)", min_value=0, value=0)
+    
     loan_amount = st.number_input("Loan Amount (in thousands)", min_value=0, value=0)
     loan_amount_term = st.number_input("Loan Amount Term (in months)", min_value=0, value=0)
     credit_history = st.selectbox("Credit history of individual’s repayment of their debts (0 for No history 1 for Having History) ", [0, 1])
