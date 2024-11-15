@@ -71,7 +71,6 @@ def main():
         'Education': education,
         'Self_Employed': self_employed,
         'ApplicantIncome': applicant_income,
-        'CoapplicantIncome': coapplicant_income,
         'LoanAmount': loan_amount,
         'Loan_Amount_Term': loan_amount_term,
         'Credit_History': credit_history,
